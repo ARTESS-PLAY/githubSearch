@@ -10,6 +10,7 @@ import { MessageType } from '../../../../components/UI/Messages/Message/types';
 
 import cl from './GitSearchBlock.module.scss';
 import { GitRepoT } from '../GitRepo/types';
+import DefaultButton from '../../../../components/UI/Buttons/DefaultButton';
 
 const GitSearchBlock: React.FC = () => {
     const [searchValue, setSearchValue] = useState('');
@@ -55,7 +56,7 @@ const GitSearchBlock: React.FC = () => {
                 ''
             )}
             <Input setParentValue={setSearchValue} />
-            {countLimit > 0 && <button onClick={buttonSearchClick}>a</button>}
+            {countLimit > 0 && <DefaultButton title="Поиск..." onClick={buttonSearchClick} />}
             {repos.length > 0 ? <GitRepoList items={repos} /> : ''}
         </div>
     );
