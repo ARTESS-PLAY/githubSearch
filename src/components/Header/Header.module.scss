@@ -1,0 +1,11 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 0 0 2px 2px rgba($color: #000000, $alpha: 0.3);
+    h2 {
+        text-align: center;
+    }
+}
