@@ -1,6 +1,8 @@
+import { ReactNode } from 'react';
+
 export interface MessageIP {
     type: MessageType;
-    children: string | JSX.Element | JSX.Element[] | (() => JSX.Element);
+    children: ReactNode;
 }
 
 export enum MessageType {

@@ -12,7 +12,7 @@ const Message: React.FC<MessageIP> = ({ children, type }) => {
     } else if (type === MessageType.DEFAULT) {
         classMessage = cl.default;
     }
-    return <></>;
+    return <div className={`${cl.message} ${classMessage}`}>{children}</div>;
 };
 
 export default Message;
